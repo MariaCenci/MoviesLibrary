@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
@@ -9,12 +8,7 @@ import "./login.scss";
 
 const Login: React.FC = () => {
  
-
-
   const navigate = useNavigate();
-
-  const [email, setEmail] = useState("");
-  
 
   const handleLogin = async () => {
 
@@ -40,9 +34,8 @@ const Login: React.FC = () => {
               type="text"
               name="email"
               id="email"
-              value={email}
               placeholder="johndoe@gmail.com"
-              onChange={(e) => setEmail(e.target.value)}
+              
             />
           </div>
 
