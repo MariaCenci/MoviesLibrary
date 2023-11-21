@@ -1,0 +1,163 @@
+@import "../../Styles/variables";
+
+
+.container-hamburguer {
+  width: 10%;
+  padding: 14px;
+}
+
+.hamburguer-icon {
+  position: absolute;
+  width: 18px;
+  height: 2.5px;
+  background-color:  map-get($colors, color-items-nav);
+  transition: 0.5s;
+  border-radius: 15px;
+  right: 8%;
+  top: 46%;
+  cursor: pointer;
+}
+
+.hamburguer-icon::before {
+  top: -7px;
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 2.5px;
+  border-radius: 15px;
+  background-color: map-get($colors, color-items-nav);
+}
+
+.hamburguer-icon::after {
+  top: 7px;
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 2.5px;
+  border-radius: 15px;
+  background-color:  map-get($colors, color-items-nav);
+}
+
+ul.list-pages li {
+  list-style-type: none;
+ 
+  p  {
+     color: map-get($colors, color-secondary)
+  }
+
+}
+
+
+ul.list-pages li a {
+  font-size: map-get(map-get($mobile, font-size), title2);
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  
+  
+}
+
+ul.list-pages li a:hover {
+  color: map-get($colors, color-hover);
+  transition: 0.3s;
+ 
+
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100vh;
+  flex-wrap: nowrap;
+  color: black;
+}
+
+.menu-list .list-pages {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.menu-list .list-pages li {
+  margin: 35px 0;
+  color: black;
+  margin-bottom: 50px;
+  font-size: 1.2em;
+
+a{
+  font-family: map-get($global-fonts, font-body);
+}
+
+  
+}
+
+.toggleActive .hamburguer-icon {
+  background-color: transparent;
+  box-shadow: 0 2px 5px transparent;
+  right: 5%;
+}
+
+.toggleActive .hamburguer-icon::after {
+  top: 0;
+  background: map-get($colors, color-secondary);
+  transform: rotate(225deg);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  z-index: 10;
+}
+
+.toggleActive .hamburguer-icon::before {
+  top: 0;
+  background: map-get($colors, color-secondary);
+  transform: rotate(135deg);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  z-index: 10;
+}
+
+.menuClose {
+  z-index: 0;
+}
+
+.menuOpen {
+  background: map-get($colors, background-body);
+  position: absolute;
+  position: fixed;
+
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+a#logout-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-size: .8em;
+  gap: 4px;
+  span {
+    margin: 0;
+
+    img {
+      width: 1.5em;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .hamburguer-icon {
+    right: 10%;
+  }
+}

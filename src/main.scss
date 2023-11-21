@@ -1,0 +1,24 @@
+@import "./Styles/variables.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+    font-family: "Arial";
+}
+
+body{
+    background: map-get($colors, background-body);
+    font-size: map-get(map-get($mobile, font-size),body);
+}
+/*TABLET*/
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+    h2.top-movies{
+        font-size: 2.2em;
+        
+    }
+
+
+}

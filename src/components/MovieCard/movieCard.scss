@@ -1,0 +1,256 @@
+@import "../../Styles/variables.scss";
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  width:250px;
+
+ min-height: 22em;
+  margin-bottom: 50px;
+  padding: 10px;
+  margin: 5px;
+  position: relative;
+  background-color: map-get($colors, color-card);
+  box-shadow: 1px 1px 14px rgb(0, 0, 0);
+  border-radius: 8px;
+  border: 0.5px solid rgba(80, 80, 80, 0.254);
+}
+
+img.img-movies {
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  border-radius: 8px;
+}
+
+.container-title{
+
+
+h2.movie-title {
+  font-size: map-get(map-get($mobile, font-size), title4);
+  font-family: map-get($global-fonts, font-title-movie), sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: map-get($colors, color-secondary);
+  
+  white-space: normal;
+  text-shadow: 1px 1px 10px black;
+  margin-top: 10px 10px 15px 10px;
+ 
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  height: 5.4em;
+}
+}
+
+
+/*VOTES*/
+.container-rating {
+  position: absolute;
+  top: -0.6em;
+  right: -0.6em;
+  background-color: transparent;
+  color: white;
+  font-size: map-get(map-get($mobile, font-size), title4);
+
+  .rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background-color: map-get($colors, color-rating);
+    box-shadow: 2px 2px 9px rgba(4, 4, 4, 0.91);
+    width: 3.3em;
+    height: 3.3em;
+  }
+}
+
+.container-main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+
+  .container-favorite-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    gap: 14px;
+
+
+
+    #favorite-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      width: 20%;
+      padding: 8px;
+      border: none;
+      cursor: pointer;
+
+      img {
+        width: 1.6em;
+      }
+
+
+    }
+
+    #addList-btn {
+      background-color: transparent;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      img {
+        width: 1.7em;
+      }
+    }
+  }
+
+  /*SEE MORE BTN*/
+  .container-see-more {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 5px;
+  }
+
+  .container-see-more a {
+    text-decoration: none;
+    font-size: map-get(map-get($mobile, font-size), title3);
+  }
+
+  .link-see-more {
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(100deg, rgb(17, 8, 73), rgb(53, 45, 150));
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+
+    min-height: 25px;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .link-see-more:hover {
+    background: map-get($colors, color-rating);
+    transition: 0.4s;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 767px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+
+    width: 70em;
+    height: 25em;
+    margin-bottom: 50px;
+    padding: 14px;
+
+
+    .img-movies {
+      width: 140px;
+    }
+
+    .container-main {
+      #favorite-btn {
+        width: 24%;
+
+        svg {
+          width: 1.5em;
+        }
+      }
+
+ 
+      .container-see-more {
+       
+        .link-see-more {
+          min-height: 25px;
+          text-align: center;
+          padding: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 899px) {
+  .card {
+    width: 700px;
+    height: 520px;
+
+    .img-movies {
+      width: 180px;
+    }
+
+    h2.movie-title {
+      font-size: map-get(map-get($tablet, font-size), title3);
+    }
+
+    .container-see-more {
+      a {
+        text-decoration: none;
+        font-size: map-get(map-get($tablet, font-size), title4);
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 900px) {
+  .card {
+    width: 700px;
+    height: 520px;
+
+    .img-movies {
+      width: 190px;
+    }
+
+    h2.movie-title {
+      font-size: map-get(map-get($tablet, font-size), title4);
+    }
+
+    .container-see-more {
+      a {
+        text-decoration: none;
+        font-size: map-get(map-get($tablet, font-size), title4);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .card {
+    width: 700px;
+    height: 490px;
+
+    .img-movies {
+      width: 170px;
+    }
+
+
+    h2.movie-title {
+      font-size: map-get(map-get($tablet, font-size), title3);
+    }
+
+.container-rating{
+
+.rating{
+      font-size: map-get(map-get($tablet, font-size), body);
+  }
+
+}
+
+}
+
+  
+}
