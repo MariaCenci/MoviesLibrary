@@ -2,19 +2,14 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
-
-
 import "./login.scss";
 
 const Login: React.FC = () => {
- 
   const navigate = useNavigate();
 
   const handleLogin = async () => {
-
-        navigate("/home", );
-      
-  }
+    navigate("/home");
+  };
 
   return (
     <>
@@ -35,7 +30,6 @@ const Login: React.FC = () => {
               name="email"
               id="email"
               placeholder="johndoe@gmail.com"
-              
             />
           </div>
 
@@ -46,7 +40,6 @@ const Login: React.FC = () => {
               name="password"
               id="password"
               placeholder="********************"
-             
             />
           </div>
 
@@ -57,7 +50,6 @@ const Login: React.FC = () => {
             <p>Don't you have an account?</p>
             <Link to="/userRegister">Sign in</Link>
           </div>
-         
         </form>
       </div>
     </>
