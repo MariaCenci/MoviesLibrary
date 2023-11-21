@@ -1,8 +1,6 @@
 
 import React, { useState, useEffect } from "react";
 import Carousel from "../../components/Carousel";
-
-
 import "../../main.scss";
 import "./home.scss";
 import { Genre } from "../../types/interfaces";

@@ -10,7 +10,6 @@ export interface MovieType{
     poster_path?: string,
   vote_average?: string,
   original_title?: string,
-  userId: string | null 
     budget?: number 
   movie: string[]
   
@@ -24,7 +23,7 @@ export interface MovieType{
     showBtn?: boolean,
           updateFavorites?: (updatedFavorites: MovieType[]) => void;   
           updateWatchList?: (updatedWatchList: MovieType[]) => void;   
-          userId: string
+          
        
   }
 
@@ -32,7 +31,7 @@ export interface MovieType{
 export type Movie = {
     id: number,
     favorite?: boolean,
-userId?: string | null ,
+
 
   }
 
@@ -47,19 +46,3 @@ movies?: Movie[],
 
   }
 
-  export type FavoriteProps = {
-   
-    userId?: string
-  }
-
-
-  export type WatchListProps = {
-   
-    userId?: string
-  }
-
-
-export type SearchProps = {
-  userId?: string;
-
-}

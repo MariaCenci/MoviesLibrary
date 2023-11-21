@@ -13,9 +13,10 @@ const Movie: React.FC = () => {
   const { id } = useParams();
   console.log(id);
   const [movie, setMovie] = useState<MovieType | null>(null);
+  //@ts-ignore
   const [genre, setGenres] = useState<Genre[] | null>(null);
 
-  const userId = localStorage.getItem("userId");
+ 
 
 
   const getGenres = async (url: string) => {

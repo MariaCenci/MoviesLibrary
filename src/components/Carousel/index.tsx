@@ -3,7 +3,7 @@ import MovieCard from "../MovieCard";
 import { CarouselProps } from "../../types/interfaces";
 import "./carousel.scss";
 
-const Carousel: React.FC<CarouselProps> = ({ movies, userId }) => {
+const Carousel: React.FC<CarouselProps> = ({ movies }) => {
   const [scrollLeft, setScrollLeft] = useState(0);
   const containerRef = useRef<HTMLDivElement | null>(null);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -16,7 +16,7 @@ const Carousel: React.FC<CarouselProps> = ({ movies, userId }) => {
     window.addEventListener("resize", updateWidth);
   }, []);
 
-  const scroll = (direction) => {
+  const scroll = (direction: string) => {
     const container = containerRef.current;
 
     if (container) {
@@ -46,7 +46,7 @@ const onMouseLeave = () => {
        
           {movies &&
            // @ts-ignore 
-            movies.map((card) => <MovieCard userId={userId} key={card.id} movie={card} />)}
+            movies.map((card) => <MovieCard  key={card.id} movie={card} />)}
 
           {screenWidth >= 768 && (
             <>

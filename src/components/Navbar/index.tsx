@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import { BiMovie } from "react-icons/bi";
 import "./navbar.scss";
 import SearchBar from "../SearchBar";
 import HamburguerMenu from "../hamburguerMenu";
