@@ -44,7 +44,7 @@ const Login: React.FC = () => {
           </div>
 
           <button type="submit" className="button">
-            Login <img src="src/icons/arrow.png" alt="->" />
+            Login <img src="/icons/arrow.png" alt="->" />
           </button>
           <div className="footer">
             <p>Don't you have an account?</p>

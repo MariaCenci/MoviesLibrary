@@ -57,7 +57,7 @@ const HamburguerMenu: React.FC = () => {
                   <a id="logout-link" onClick={handleLogout}>
                     Logout
                     <span>
-                      <img src="src/icons/logout.png" alt="" />
+                      <img src="/icons/logout.png" alt="" />
                     </span>
                   </a>
                 </li>

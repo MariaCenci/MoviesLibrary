@@ -37,10 +37,10 @@ const MovieCard: React.FC<MovieCardProps> = ({
 
           <div className="container-favorite-btn">
             <button id="favorite-btn">
-            <img src="src/icons/favorite.png" alt="" />
+            <img src="/icons/favorite.png" alt="" />
             </button>
             <button id="addList-btn" >
-              <img src="src/icons/addList.png" alt="" />
+              <img src="/icons/addList.png" alt="" />
             </button>
           
           </div>
