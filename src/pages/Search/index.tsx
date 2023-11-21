@@ -3,9 +3,9 @@ import { useSearchParams } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import MovieCard from "../../components/MovieCard";
 import "./search.scss";
-import { Movie, SearchProps } from "../../types/interfaces";
+import { Movie} from "../../types/interfaces";
 
-export const Search: React.FC <SearchProps> = () => {
+export const Search: React.FC  = () => {
   const searchURL = "https://api.themoviedb.org/3/search/movie";
   const apiKey = "api_key=8ed200f50a6942ca5bc8b5cdec27ff22";
 
