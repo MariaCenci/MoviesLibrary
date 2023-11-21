@@ -13,7 +13,7 @@
     "deploy": "gh-pages -d dist"
   },
   "engines": {
-    "node": ">=20.9"
+    "node": "18.x"
   },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
