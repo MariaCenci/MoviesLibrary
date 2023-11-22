@@ -14,15 +14,19 @@ const rootElement = document.getElementById("root");
 
 */
 import React from 'react';
-import ReactDOM from 'react-dom';
 import App from './App';
+import { createRoot } from 'react-dom/client';
 
 const rootElement = document.getElementById('root');
-
-ReactDOM.render(
+if(rootElement){
+  createRoot(rootElement).render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  rootElement
+  </React.StrictMode>
+
 );
+}else {
+  console.error("Element with ID 'root' not found")
+}
+
 

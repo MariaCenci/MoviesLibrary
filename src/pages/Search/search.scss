@@ -33,11 +33,10 @@ text-align: center;
 
     .card {
       padding: 12px;
-      margin-bottom: 40px;
       display: flex;
       flex-direction: column;
 
-      width: 150px;
+      width: 130px;
       margin-bottom: 50px;
       padding: 10px;
       margin: 5px;
@@ -51,7 +50,7 @@ text-align: center;
         display: flex;
         justify-content: center;
         flex-direction: column;
-        gap: 14px;
+        gap: 10px;
 
         .img-movies {
           width: 80%;
@@ -67,6 +66,19 @@ text-align: center;
       h2.movie-title {
         font-size: map-get(map-get($mobile, font-size), title3);
       }
+    }
+  }
+}
+
+
+@media screen and (min-width: 354px) and (max-width: 449px) {
+  .container-search {
+    .container-movies {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 16px;
+      gap: 30px;
+
     }
   }
 }
@@ -108,7 +120,7 @@ text-align: center;
   .container-search {
     .container-movies {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       grid-gap: 16px;
       gap: 30px;
 
@@ -118,12 +130,15 @@ text-align: center;
         justify-content: center;
         align-items: center;
         width: 11em;
+        max-height: 68vh;
+   padding: 10px
       }
 
       .container-main {
         display: flex;
         justify-content: center;
         flex-direction: column;
+     
 
         img.img-movies {
           text-align: center;
@@ -172,7 +187,7 @@ text-align: center;
       align-items: center;
 
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-gap: 16px;
       gap: 30px;
 
@@ -182,6 +197,7 @@ text-align: center;
         justify-content: center;
         align-items: center;
         width: 11em;
+        max-height: 68vh;
       }
 
       .container-main {

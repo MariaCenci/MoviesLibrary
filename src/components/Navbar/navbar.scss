@@ -5,8 +5,8 @@
 justify-content: space-between;
   align-items: center;
 
-  background-color: rgba(255, 255, 255, 0.826);
-  height: 70px;
+  background-color: rgba(255, 255, 255, 0.873);
+  height: 3.8em;
   margin-bottom: 20px;
   position: sticky;
   padding: 0 1.2em;
@@ -38,10 +38,17 @@ span.logo {
   font-size: map-get(map-get($mobile, font-size), logo);
   font-family: map-get($global-fonts, font-logo);
   text-decoration: none;
- 
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
 
   color:map-get($colors, color-items-nav);
 
+  img{
+   width: 1.1em;
+  }
 
 }
 }

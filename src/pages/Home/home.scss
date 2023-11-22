@@ -20,7 +20,7 @@
     color: map-get($colors, color-secondary);
     font-size: map-get(map-get($mobile, font-size), title1);
     text-shadow: 1px 1px 15px black;
-    padding: 40px 0 0 54px;
+    padding: 40px 0 0 58px;
     font-family: map-get($global-fonts, font-title);
   }
 
@@ -29,8 +29,8 @@
     white-space: nowrap;
     width: 100vw;
 
-    max-height: 70vh;
-    padding: 20px 10px;
+    max-height: 100vh;
+   padding-top: 20px;
 
     overflow-y: hidden;
   }
@@ -86,7 +86,7 @@
     }
 
     .movie-card-container {
-      width: 700px;
+      width: 750px;
       height: 600px;
       padding: 20px 0;
     }

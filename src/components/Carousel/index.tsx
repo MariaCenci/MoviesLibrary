@@ -58,7 +58,7 @@ const onMouseLeave = () => {
               
               >
                 <img
-                 src={hover? "../src/icons/arrowOn.png" : "../src/icons/arrowOff.png" }
+                 src={hover? "/icons/arrowOn.png" : "/icons/arrowOff.png" }
                  alt="" />
               </button>
               <button
@@ -68,7 +68,7 @@ const onMouseLeave = () => {
                 onMouseLeave={onMouseLeave}
               >
                  <img
-                 src={hover? "../src/icons/arrowOn.png" : "../src/icons/arrowOff.png" }
+                 src={hover? "/icons/arrowOn.png" : "/icons/arrowOff.png" }
                  alt="" />
               </button>
             </>
