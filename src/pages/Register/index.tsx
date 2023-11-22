@@ -44,7 +44,7 @@ const Register: React.FC = () => {
         </div>
 
         <button onClick={handleRegister} className="button">
-          Register <img src="src/icons/arrow.png" alt="->" />
+          Register <img src="icons/arrow.png" alt="->" />
         </button>
         <div className="footer">
           <p>Already have an account?</p>
