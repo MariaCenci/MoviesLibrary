@@ -22,7 +22,7 @@ img.img-movies {
   align-items: center;
   width: 40vw;
   border-radius: 8px;
-  height: 24vh;
+  height: 14em;
 }
 
 .container-title{
@@ -153,13 +153,14 @@ h2.movie-title {
     flex-direction: column;
 
     width: 70em;
-    height: 25em;
+    height: 24em;
     margin-bottom: 50px;
-    padding: 14px;
+    
 
 
     .img-movies {
       width: 140px;
+      height: 12em;
     }
 
     .container-main {
