@@ -20,7 +20,7 @@
     color: map-get($colors, color-secondary);
     font-size: map-get(map-get($mobile, font-size), title1);
     text-shadow: 1px 1px 15px black;
-    padding: 40px 0 0 58px;
+    padding: 40px 0 0 52px;
     font-family: map-get($global-fonts, font-title);
   }
 
@@ -37,7 +37,7 @@
 
   .container-select {
     .select-gender {
-      padding: 20px 0 0 58px;
+      padding: 20px 0 0 52px;
 
       select {
         border-radius: 6px;
@@ -56,7 +56,7 @@
     h2.top-movies,
     h2.popular-movies,
     h2.upcoming-movies {
-      padding-left: 58px;
+      padding-left: 52px;
       font-size: map-get(map-get($tablet, font-size), title1);
   
      
@@ -81,7 +81,7 @@
     h2.top-movies,
     h2.popular-movies,
     h2.upcoming-movies {
-      padding-left: 1.6em;
+      padding-left: 52px;
       font-size: map-get(map-get($tablet, font-size), title1);
     }
 
@@ -99,7 +99,7 @@
     h2.top-movies,
     h2.popular-movies,
     h2.upcoming-movies {
-      padding-left: 2em;
+      padding-left: 52px;
       font-size: map-get(map-get($tablet, font-size), title1);
     }
 
@@ -120,7 +120,7 @@
     h2.top-movies,
     h2.popular-movies,
     h2.upcoming-movies {
-      padding-left: 2em;
+      padding-left: 52px;
       font-size: map-get(map-get($tablet, font-size), title1);
     }
 
