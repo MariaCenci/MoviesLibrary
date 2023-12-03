@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
     <nav id="navbar">
       <div className="container-logo">
         <Link to="/home">
-          <span className="logo"><img src="icons/ciak.png" alt="" />MoviesLib </span>
+          <span className="logo"><img src="/icons/ciak.png" alt="" />MoviesLib </span>
         </Link>
       </div>
 

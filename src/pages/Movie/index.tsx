@@ -108,7 +108,7 @@ const Movie: React.FC = () => {
                   </span>
                   <span className="middle-dot">
                     {" "}
-                    <img src="../src/icons/dot.png" alt="" />
+                    <img src="/icons/dot.png" alt="" />
                   </span>
                   <span className="runtime">{movie.runtime} min </span>
                 </div>
@@ -124,7 +124,7 @@ const Movie: React.FC = () => {
 
                 <div className="movie-info">
                   <div className="container-budget">
-                    <img src="../src/icons/budget.png" alt="" />
+                    <img src="/icons/budget.png" alt="" />
 
                     <span className="budget">
                       {movie?.budget ? formatNumber(movie.budget) : "-"}

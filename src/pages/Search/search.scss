@@ -53,12 +53,12 @@ text-align: center;
         gap: 10px;
 
         .img-movies {
-          width: 80%;
+       width: 90%;
         }
 
         img.img-movies {
-          width: 100%;
-          justify-content: center;
+           width: 100%;
+    
           align-items: center;
         }
       }
@@ -127,10 +127,10 @@ text-align: center;
       .card {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+       
         align-items: center;
         width: 11em;
-        max-height: 68vh;
+        max-height: 52vh;
    padding: 10px
       }
 
@@ -143,6 +143,7 @@ text-align: center;
         img.img-movies {
           text-align: center;
           width: 200px;
+          
         }
       }
     }
@@ -162,7 +163,7 @@ text-align: center;
       .card {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        
         align-items: center;
         width: 13em;
       }
@@ -194,10 +195,10 @@ text-align: center;
       .card {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+      
         align-items: center;
         width: 11em;
-        max-height: 68vh;
+        max-height: 51vh;
       }
 
       .container-main {
@@ -208,6 +209,7 @@ text-align: center;
         img.img-movies {
           text-align: center;
           width: 200px;
+          height: 260px;
         }
       }
     }

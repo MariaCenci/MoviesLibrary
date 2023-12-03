@@ -136,6 +136,7 @@
     justify-content: space-between;
     padding: 4.4em 2em 2em 2em;
     color: map-get($colors, color-secondary);
+    height: 90vh;
 
     .poster {
       width: 36%;
@@ -228,7 +229,7 @@
     justify-content: space-evenly;
     padding: 4.2em 2em 4em 2em;
     color: map-get($colors, color-secondary);
-
+height: 90vh;
     .poster {
       width: 30%;
       max-width: 400px;
