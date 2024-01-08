@@ -4,7 +4,7 @@ import Home from "../pages/Home";
 import Movie from "../pages/Movie";
 import Search from "../pages/Search";
 import NavBar from "../components/Navbar";
-
+import Favorite from "../pages/Favorite";
 
 
 const AutheticatedRoutes = () => {
@@ -18,6 +18,7 @@ const AutheticatedRoutes = () => {
             <Route path="/home" element={<Home />} />
             <Route path="/movie/:id" element={<Movie />} />
             <Route path="/search" element={<Search  />} />
+            <Route path="/favorite" element={<Favorite />} />
           </Routes>
       
         </>

@@ -11,7 +11,8 @@ export interface MovieType{
   vote_average?: string,
   original_title?: string,
     budget?: number 
-  movie: string[]
+  movie: string[],
+  favorite?: boolean
   
   }
 
@@ -22,10 +23,16 @@ export interface MovieType{
     movie: MovieType 
     showBtn?: boolean,
           updateFavorites?: (updatedFavorites: MovieType[]) => void;   
-          updateWatchList?: (updatedWatchList: MovieType[]) => void;   
+          updateWatchList?: (updatedWatchList: MovieType[]) => void; 
+          onTogglefavorite: (movieId: number, isFavorite: boolean) => void;  
           
        
   }
+
+export type FavoriteProps = {
+  userId?: string;
+};
+
 
 
 export type Movie = {
@@ -43,6 +50,7 @@ export type Movie = {
 
   export type CarouselProps = {
 movies?: Movie[],
+onTogglefavorite?: (movieId: number, isFavorite: boolean) => void
 
   }
 

@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import "./hamburguer.scss";
 import { useNavigate } from "react-router-dom";
 
@@ -12,11 +11,6 @@ const HamburguerMenu: React.FC = () => {
   //open and close menu
   const toggleMenu = () => {
     setActiveMenu(!activeMenu);
-  };
-
-  //closes menu when a link is clicked
-  const closeMenu = () => {
-    setActiveMenu(false);
   };
 
   // disactivate scroll bar opened menu
@@ -46,13 +40,6 @@ const HamburguerMenu: React.FC = () => {
           {activeMenu && (
             <div className="menu-list">
               <ul className="list-pages">
-                <li>
-                  <Link to="/home" onClick={closeMenu}>
-                    Home
-                  </Link>
-                </li>
-                <li><p>Favorites</p></li>
-                <li><p>Watch list</p></li>
                 <li>
                   <a id="logout-link" onClick={handleLogout}>
                     Logout

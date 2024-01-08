@@ -3,15 +3,12 @@ import React, { useState, useEffect } from "react";
 import Carousel from "../../components/Carousel";
 import "../../main.scss";
 import "./home.scss";
-import { Genre } from "../../types/interfaces";
+import { Genre, Movie } from "../../types/interfaces";
 
 const moviesURL = "https://api.themoviedb.org/3/movie/";
 const genresURL = "https://api.themoviedb.org/3/";
 const apiKey = "api_key=8ed200f50a6942ca5bc8b5cdec27ff22";
 
-type Movie = {
-  id: number;
-};
 
 const Home: React.FC = () => {
   const [topMovies, setTopMovies] = useState<Movie[]>([]);
@@ -22,6 +19,14 @@ const Home: React.FC = () => {
     undefined
   );
 
+
+const updateMovieFavoriteStatus = (movieId: number, isFavorite: boolean) => {
+  setTopMovies((prevMovies) =>
+    prevMovies.map((movie) =>
+      movie.id === movieId ? { ...movie, favorite: isFavorite } : movie
+    )
+  );
+};
   const getTopMovies = async (url: string) => {
     try {
       const res = await fetch(url);
@@ -133,7 +138,9 @@ const Home: React.FC = () => {
             {topMovies.length === 0 && <p>Loading...</p>}
             {topMovies.length > 0 && (
               <div className="movie-card-container">
-                <Carousel movies={topMovies} />
+                <Carousel
+                 movies={topMovies}
+                 onTogglefavorite={updateMovieFavoriteStatus} />
               </div>
             )}
           </div>
