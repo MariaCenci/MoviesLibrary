@@ -36,7 +36,8 @@ text-align: center;
       display: flex;
       flex-direction: column;
 
-      width: 130px;
+      width: 190px;
+     
       margin-bottom: 50px;
       padding: 10px;
       margin: 5px;
@@ -71,19 +72,8 @@ text-align: center;
 }
 
 
-@media screen and (min-width: 354px) and (max-width: 449px) {
-  .container-search {
-    .container-movies {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 16px;
-      gap: 30px;
 
-    }
-  }
-}
-
-@media screen and (min-width: 450px) and (max-width: 767px) {
+@media screen and (min-width: 448px) and (max-width: 767px) {
   .container-search {
     .container-movies {
       display: grid;
@@ -166,6 +156,7 @@ text-align: center;
         
         align-items: center;
         width: 13em;
+        max-height: 55vh;
       }
 
       .container-main {
@@ -198,7 +189,7 @@ text-align: center;
       
         align-items: center;
         width: 11em;
-        max-height: 51vh;
+        max-height: 60vh;
       }
 
       .container-main {
@@ -215,3 +206,4 @@ text-align: center;
     }
   }
 }
+
