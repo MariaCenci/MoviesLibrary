@@ -40,10 +40,11 @@
       padding: 20px 0 0 52px;
 
       select {
-        border-radius: 6px;
-        font-size: 0.7em;
+        border-radius: 3px;
+        font-size: 1em;
         border: none;
         width: 10em;
+        padding: 4px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.594);
         cursor: pointer;
       }
@@ -121,12 +122,25 @@
     h2.popular-movies,
     h2.upcoming-movies {
       padding-left: 52px;
-      font-size: map-get(map-get($tablet, font-size), title1);
+      font-size: map-get(map-get($desktop, font-size), title3);
     }
 
     .movie-card-container {
       width: 84vw;
       height: 600px;
+    }
+
+
+    .container-select {
+      .select-gender {
+        
+  
+        select {
+          font-size: 1em;
+          width: 14em;
+         
+        }
+      }
     }
   }
 }

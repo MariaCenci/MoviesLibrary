@@ -4,9 +4,9 @@
   display: flex;
   flex-direction: column;
 
-  width:250px;
+  width: 260px;
 
- min-height: 20em;
+  min-height: 20em;
   margin-bottom: 50px;
   padding: 10px;
   margin: 5px;
@@ -20,31 +20,28 @@
 img.img-movies {
   justify-content: center;
   align-items: center;
-  width: 40vw;
+  width: 46vw;
   border-radius: 8px;
   height: 14em;
 }
 
-.container-title{
+.container-title {
+  h2.movie-title {
+    font-size: map-get(map-get($mobile, font-size), title4);
+    font-family: map-get($global-fonts, font-title-movie), sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: map-get($colors, color-secondary);
 
+    white-space: normal;
+    text-shadow: 1px 1px 10px black;
+    margin-top: 10px 10px 15px 10px;
 
-h2.movie-title {
-  font-size: map-get(map-get($mobile, font-size), title4);
-  font-family: map-get($global-fonts, font-title-movie), sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  color: map-get($colors, color-secondary);
-  
-  white-space: normal;
-  text-shadow: 1px 1px 10px black;
-  margin-top: 10px 10px 15px 10px;
- 
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0);
-  height: 5.4em;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    height: 5.4em;
+  }
 }
-}
-
 
 /*VOTES*/
 .container-rating {
@@ -83,8 +80,6 @@ h2.movie-title {
     padding-top: 10px;
     gap: 14px;
 
-
-
     #favorite-btn {
       display: flex;
       justify-content: center;
@@ -98,8 +93,6 @@ h2.movie-title {
       img {
         width: 1.6em;
       }
-
-
     }
 
     #addList-btn {
@@ -138,7 +131,7 @@ h2.movie-title {
 
     min-height: 25px;
     text-align: center;
-    padding: 5px;
+    padding: 8px;
   }
 
   .link-see-more:hover {
@@ -155,11 +148,9 @@ h2.movie-title {
     width: 70em;
     height: 24em;
     margin-bottom: 50px;
-    
-
 
     .img-movies {
-      width: 140px;
+      width: 166px;
       height: 12em;
     }
 
@@ -172,9 +163,7 @@ h2.movie-title {
         }
       }
 
- 
       .container-see-more {
-       
         .link-see-more {
           min-height: 25px;
           text-align: center;
@@ -208,7 +197,6 @@ h2.movie-title {
   }
 }
 
-
 @media screen and (min-width: 900px) {
   .card {
     width: 700px;
@@ -235,27 +223,41 @@ h2.movie-title {
 @media screen and (min-width: 1023px) {
   .card {
     width: 700px;
-    height: 490px;
+    height: 536px;
 
     .img-movies {
-      width: 170px;
-      height: 15em;
+      width: 232px;
+      height: 15.2em;
     }
-
 
     h2.movie-title {
-      font-size: map-get(map-get($tablet, font-size), title3);
+      font-size: map-get(map-get($tablet, font-size), logo);
     }
 
-.container-rating{
+    .container-favorite-btn{
+      #favorite-btn{
+        img{
+          width: 26px;
+        }
+        
+      }
+    }
 
-.rating{
-      font-size: map-get(map-get($tablet, font-size), body);
+    .container-rating {
+      .rating {
+        font-size: map-get(map-get($tablet, font-size), body);
+      }
+    }
+
+.container-main{
+  .container-see-more{
+    a{
+        font-size: map-get(map-get($tablet, font-size), logo);
+      }
+    
+    
   }
-
 }
 
-}
-
-  
+  }
 }
